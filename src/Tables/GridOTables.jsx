@@ -45,7 +45,8 @@ const headCells = [
   { id: 'virtualization', numeric: false, disablePadding: false, label: 'Virtualization' },
   { id: 'autoWidth', numeric: false, disablePadding: false, label: 'Auto Width' },
   { id: 'autoHeight', numeric: false, disablePadding: false, label: 'Dynamic Height' },
-  { id: 'dragDrop', numeric: false, disablePadding: false, label: 'Drag/Drop' }
+  { id: 'dragDrop', numeric: false, disablePadding: false, label: 'Drag/Drop' },
+  { id: 'fixedColumns', numeric: false, disablePadding: false, label: 'Pinned Columns' }
 ];
 
 function Header(props) {
@@ -148,12 +149,13 @@ export default function GridOTables(props) {
                     {row.name}
                   </TableCell>
                   <TableCell align="left">{row.sorting}</TableCell>
-                  <TableCell align="center">{row.styling}</TableCell>
-                  <TableCell align="center">{row.pagination}</TableCell>
-                  <TableCell align="center">{row.virtualization}</TableCell>
-                  <TableCell align="center">{row.autoWidth}</TableCell>
-                  <TableCell align="center">{row.autoHeight}</TableCell>
+                  <TableCell align="left">{row.styling}</TableCell>
+                  <TableCell align="left">{row.pagination}</TableCell>
+                  <TableCell align="left">{row.virtualization}</TableCell>
+                  <TableCell align="left">{row.autoWidth}</TableCell>
+                  <TableCell align="left">{row.autoHeight}</TableCell>
                   <TableCell align="left">{row.dragDrop}</TableCell>
+                  <TableCell align="left">{row.fixedColumns}</TableCell>
                 </TableRow>
               );
             })}

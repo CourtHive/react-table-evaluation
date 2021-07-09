@@ -5,9 +5,10 @@ export const rows = [
     styling: 'x',
     pagination: 'Yes',
     virtualization: 'Yes',
-    autoWidth: 'Yes',
+    autoWidth: 'FlexGrow',
     autoHeight: 'Yes',
-    dragDrop: 'Yes'
+    dragDrop: 'Yes',
+    fixedColumns: 'Yes'
   },
   {
     name: 'BaseTable',
@@ -15,9 +16,10 @@ export const rows = [
     styling: 'x',
     pagination: 'No',
     virtualization: 'Yes',
-    autoWidth: 'w',
+    autoWidth: 'FlexGrow',
     autoHeight: 'Yes',
-    dragDrop: 'Yes'
+    dragDrop: 'Yes',
+    fixedColumns: 'Yes'
   },
   {
     name: 'RSuite',
@@ -25,8 +27,9 @@ export const rows = [
     styling: 'x',
     pagination: 'Yes',
     virtualization: 'Yes',
-    autoWidth: 'w',
+    autoWidth: 'FlexGrow',
     autoHeight: 'Yes',
-    dragDrop: 'With react-dnd'
+    dragDrop: 'With react-dnd',
+    fixedColumns: 'Yes'
   }
 ];
