@@ -4,6 +4,10 @@ import { competitionEngine } from 'tods-competition-factory';
 
 import 'react-base-table/styles.css';
 
+/*
+ * Source: https://autodesk.github.io/react-base-table/examples/default
+ */
+
 function ReactBaseTable() {
   const { tournamentState } = useTournamentContext();
   const competitionParticipants = tournamentState?.refreshCount

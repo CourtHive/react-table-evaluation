@@ -7,6 +7,10 @@ import 'rsuite/dist/styles/rsuite-default.css';
 
 const { Column, HeaderCell, Cell } = Table;
 
+/*
+ * Source: https://rsuitejs.com/components/table/
+ */
+
 function RsuiteTable() {
   const { tournamentState } = useTournamentContext();
   const competitionParticipants = tournamentState?.refreshCount
