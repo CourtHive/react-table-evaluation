@@ -1,6 +1,7 @@
 export const rows = [
   {
     name: 'Ag-Grid',
+    url: 'https://www.ag-grid.com/react-grid/',
     sorting: 'Built-in with customization possible',
     styling: 'x',
     pagination: 'Yes',
@@ -12,6 +13,7 @@ export const rows = [
   },
   {
     name: 'BaseTable',
+    url: 'https://autodesk.github.io/react-base-table/examples/default',
     sorting: 'Column event triggers callback',
     styling: 'x',
     pagination: 'No',
@@ -23,6 +25,7 @@ export const rows = [
   },
   {
     name: 'RSuite',
+    url: 'https://rsuitejs.com/components/table/',
     sorting: 'Column event triggers callback',
     styling: 'x',
     pagination: 'Yes',

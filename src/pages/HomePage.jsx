@@ -10,6 +10,8 @@ import BaseTable from '../Tables/BaseTable';
 import RsuiteTable from '../Tables/RSuite';
 import AGGrid from '../Tables/AGGrid';
 
+import { rows } from '../Tables/comparison';
+
 function HomePage() {
   const {
     tournamentState: { tournamentId },
@@ -27,7 +29,7 @@ function HomePage() {
     }
   };
 
-  const tableTypes = ['Ag-Grid', 'BaseTable', 'RSuite'];
+  const tableTypes = rows.map(({ name }) => name);
   const tableOptions = tableTypes.map((tableType) => ({ value: tableType }));
   const [selectedTable, setTable] = useState('-');
   const selectTable = (event) => {
@@ -36,6 +38,10 @@ function HomePage() {
   };
 
   const handleRowClick = (name) => setTable(name);
+  const visitURL = () => {
+    const tableData = rows.find((row) => row.name === selectedTable);
+    if (tableData?.url) window.open(tableData.url);
+  };
 
   return (
     <div>
@@ -50,6 +56,11 @@ function HomePage() {
             </MenuItem>
           ))}
         </TMXSelect>
+        {selectedTable === '-' ? null : (
+          <Button variant="outlined" onClick={visitURL} style={{ marginLeft: '1em' }}>
+            {`Open ${selectedTable} Website`}
+          </Button>
+        )}
         <Button variant="outlined" onClick={handleClick} style={{ marginLeft: '1em' }}>
           {tournamentId ? 'Clear Data' : 'Load Data'}
         </Button>
