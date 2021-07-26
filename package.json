@@ -49,6 +49,6 @@
     "eslint-plugin-prettier": "3.4.0",
     "eslint-plugin-react": "7.24.0",
     "prettier": "2.3.2",
-    "prettier-eslint": "12.0.0"
+    "prettier-eslint": "13.0.0"
   }
 }
