@@ -42,7 +42,7 @@
   "devDependencies": {
     "@testing-library/jest-dom": "5.14.1",
     "@testing-library/react": "11.2.7",
-    "@testing-library/user-event": "12.8.3",
+    "@testing-library/user-event": "13.5.0",
     "@typescript-eslint/eslint-plugin": "4.28.4",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-jest": "24.4.0",
